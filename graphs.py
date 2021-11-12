@@ -1,6 +1,7 @@
-def floyd(graph: list):
+def floyd(graph: list) -> list:
     """
     Calculate the shortest path between all the nodes of the graph represented by an adjacency matrix
+
     :param: graph: the graph represented in adjacency matrix
     :return: the distance between all the nodes
     """
@@ -12,9 +13,10 @@ def floyd(graph: list):
     return graph
 
 
-def dijkstra(graph: list, node: int):
+def dijkstra(graph: list, node: int) -> list:
     """
     Calculate the shortest path from node in a graph represented by an adjacency list
+
     :param graph: the graph represented in adjacency list
     :param node: the node where to start
     :return: the distance between all the nodes and the node
@@ -37,9 +39,10 @@ def dijkstra(graph: list, node: int):
     return dist
 
 
-def prim(graph: list):
+def prim(graph: list) -> list:
     """
     Calculate the minimum spanning tree of graph using Prim's algorithm
+
     :param graph: the graph represented in an adjacency list
     :return: the minimum spanning tree
     """
@@ -61,9 +64,10 @@ def prim(graph: list):
     return dist
 
 
-def kruskal(graph: list):
+def kruskal(graph: list) -> list:
     """
     Calculate the minimum spanning tree of graph using Kruskal's algorithm
+
     :param graph: the graph represented in an adjacency list
     :return: the minimum spanning tree
     """
@@ -84,9 +88,10 @@ def kruskal(graph: list):
     return mst_tree
 
 
-def bfs(graph: list, node: int):
+def bfs(graph: list, node: int) -> list:
     """
     Calculate the shortest path from node in a graph represented by an adjacency list
+
     :param graph: the graph represented in adjacency list
     :param node: the node where to start
     :return: the distance between all the nodes and the node
@@ -107,9 +112,10 @@ def bfs(graph: list, node: int):
     return dist
 
 
-def dfs(graph: list, node: int):
+def dfs(graph: list, node: int) -> list:
     """
     Calculate the shortest path from node in a graph represented by an adjacency list
+
     :param graph: the graph represented in adjacency list
     :param node: the node where to start
     :return: the distance between all the nodes and the node
@@ -130,9 +136,10 @@ def dfs(graph: list, node: int):
     return dist
 
 
-def edmond_karp(graph: list, source: int, sink: int):
+def edmond_karp(graph: list, source: int, sink: int) -> int:
     """
     Calculate the maximum flow in a graph represented by an adjacency list
+
     :param graph: the graph represented in adjacency list
     :param source: the source node
     :param sink: the sink node
